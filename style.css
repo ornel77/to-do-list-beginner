@@ -103,6 +103,7 @@ main .btn:hover {
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 
