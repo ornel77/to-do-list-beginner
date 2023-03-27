@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --accent-color: #FB8500;
+    --primary-color: #023047;
+    --secondary-light-color: #8ECAE6;
+    --secondary-dark-color: #219EBC;
+    --white-color: rgb(238, 237, 239);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    background: url('./assets/bg-todo2.jpg') no-repeat center/cover;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+main {
+    max-width: 640px;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 FORMULAIRE                                 */
+/* -------------------------------------------------------------------------- */
+main form {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-bottom: 30px;
+    /* gap: 10px; */
+}
+
+main form .todo-input {
+    /* overflow-x: scroll; */
+}
+
+main form .todo-input, main .btn {
+    background: transparent;
+    outline: none;
+    padding: 10px 0px;
+    border: 0;
+    border-bottom: 3px solid var(--accent-color);
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+main form .todo-input::placeholder {
+    color:rgba(251, 251, 251, 0.528);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .btn {
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 250ms ease-in-out;
+    border-bottom: 3px solid var(--accent-color);
+    color: rgba(251, 251, 251, 0.528)
+
+}
+
+main .btn:hover {
+    color: var(--accent-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 TO-DO LIST                                 */
+/* -------------------------------------------------------------------------- */
+.todo-list .todo-item {
+    background-color: rgba(238, 237, 239, .7);
+    color: rgb(16, 16, 16);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 540px){
+    main {
+        max-width: 310px;
+    }
+}

@@ -1,6 +1,6 @@
 # TO-DO LIST
 
-*Faire une to-do-list avec plusieurs niveaux de difficulté*
+*Faire une to-do list avec plusieurs niveaux de difficulté*
 
 ## 1. Level 1
 Faire uniquement un input et une liste de tache
